@@ -1,0 +1,17 @@
+*~
+*\.tmp
+*\.log
+*\.opensdf
+*\.sdf
+*\.suo
+target
+/\.classpath
+/\.project
+/\.settings
+/\.idea
+/\.idea_modules
+/\.lib
+/\.DS_Store
+/\.classpath_nb
+/\.ensime
+/\.ensime_lucene
