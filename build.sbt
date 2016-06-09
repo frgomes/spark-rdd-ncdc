@@ -1,6 +1,6 @@
 name := "spark-rdd-ncdc"
 
-version := "1.0"
+version := "1.0-SNAPSHOT"
 
 scalaVersion := "2.11.8"
 
@@ -25,7 +25,8 @@ libraryDependencies ++= Seq(
 
 
 mainClass in assembly := some("io.peartree.NcdcRddJob")
-assemblyJarName := "spark-rdd-ncdc-1.0.jar"
+
+//XXX assemblyJarName := "spark-rdd-ncdc-1.0.jar"
 
 assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = false)
 

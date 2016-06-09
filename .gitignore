@@ -4,7 +4,9 @@
 *\.opensdf
 *\.sdf
 *\.suo
+metastore_db
 target
+tmp
 /\.classpath
 /\.project
 /\.settings
