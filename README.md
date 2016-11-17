@@ -21,7 +21,7 @@ This project is playground on Spark RDD and lots of random things alike.
     # find your own IP
     IP=$(ip -o addr show | fgrep "scope global" | sed -r "s/[ \t]+/ /g" | fgrep "eth0 inet " | cut -d" " -f4 | cut -d/ -f1)
 
-    # submit a spark job using the stand alone cluster
+    # submit a spark job using deploy-mode=client
     $SPARK_HOME/bin/spark-submit --class io.peartree.ncdc.NcdcRddJob \
                                  --master spark://${IP}:7077 \
                                  --deploy-mode client \
