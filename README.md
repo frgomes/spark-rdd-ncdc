@@ -9,11 +9,15 @@ This project is playground on Spark RDD and lots of random things alike.
     wget https://www.ncdc.noaa.gov/orders/qclcd/QCLCD200705.zip
     unzip QCLCD200705.zip
 
-    # download this project and build it
+    # download this project
     mkdir -p ~/workspace && cd ~/workspace
     git clone https://github.com/frgomes/spark-rdd-ncdc
     cd spark-rdd-ncdc
-    sbt clean package assembly
+
+    # download SBT runner and builds this project
+    # NOTE: this will DOWNLOAD HALF OF THE INTERNET and will take A LOT OF TIME to complete!
+    curl -s https://raw.githubusercontent.com/paulp/sbt-extras/master/sbt > sbt && chmod 0755 sbt
+    ./sbt clean package assembly
 
     # start Spark's master
     ${SPARK_HOME}/sbin/start-master.sh

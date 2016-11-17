@@ -4,6 +4,7 @@
 *\.opensdf
 *\.sdf
 *\.suo
+sbt
 metastore_db
 target
 tmp
